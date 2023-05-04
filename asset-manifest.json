@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/concact-form/static/js/main.aac91a7f.js",
-    "index.html": "/concact-form/index.html",
-    "main.aac91a7f.js.map": "/concact-form/static/js/main.aac91a7f.js.map"
+    "main.js": "/contact-form/static/js/main.aac91a7f.js",
+    "index.html": "/contact-form/index.html",
+    "main.aac91a7f.js.map": "/contact-form/static/js/main.aac91a7f.js.map"
   },
   "entrypoints": [
     "static/js/main.aac91a7f.js"
