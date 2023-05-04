@@ -1,0 +1,158 @@
+body{
+    background-color: #f7f7f5;
+}
+
+.app{
+    min-width: 350px;
+    max-width: 1450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+
+.heading{
+    width: 40%;
+    text-align: center;
+    padding: 5%;
+    margin: auto;
+    font-size: 3.5rem;
+    font-family:Larsseit,sans-serif;
+    font-weight: 900;
+    animation-name: my-text-animation;
+    animation-duration: 8s;
+}
+
+@keyframes my-text-animation {
+    from {color:#f7f7f5}
+    to {color: black}
+}
+
+.form{
+    min-width: 400px;
+    width: 40%;
+    padding: 1% 4%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    font-family: itc-avant-garde-gothic-pro,Arial,sans-serif;
+}
+
+.form-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-family: itc-avant-garde-gothic-pro,Arial,sans-serif;
+    font-weight:bolder;
+}
+
+
+.form-content-items {
+    width: 90%;
+    margin: 0.5% auto;
+    padding: 2.5% 4%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.error {
+    width: 100%;
+    padding: 0px 5px 5px;
+    margin:0;
+    color:red;
+    font-size: 0.9rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+
+.message{
+    height: 80px;
+    resize: none;
+    padding: 4%;
+}
+
+
+.form-checkbox, .form-checkbox-label{
+    margin:2% 1%;
+    font-size: 0.95rem;
+}
+
+.form-checkbox-label-link{
+    margin: auto;
+}
+
+
+.require-information{
+    margin-top: 0%;
+    margin-left: 2%;
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.form-button{
+    width: 100%;
+    margin: 4% 0% 2% 0%;
+    padding: 3%;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    box-shadow: 2px 2px 2px darkgray;
+    cursor: pointer;
+    font-family: itc-avant-garde-gothic-pro,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color:white;
+}
+
+@media screen and (max-width: 1025px) 
+{   
+    body{
+        background-size: 80%;
+    }
+    .heading{
+        width: 60%;
+        font-size: 3rem;
+    }    
+
+    .form-content-items {
+        padding: 5% 4%;
+    }
+
+    .form{
+        margin: 5% auto;
+    }
+}
+
+
+@media screen and (max-width: 680px) 
+{
+    .heading{
+        width: 75%;
+        font-size: 2.7rem;
+    }   
+}
+
+@media screen and (max-width: 500px) 
+{
+    .heading{
+        width: 80%;
+        font-size: 2.5rem;
+    }   
+    .form{
+        min-width: 280px;
+        width: 70%;
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width: 460px) 
+{
+    .heading{
+        width: 80%;
+        font-size: 2rem;
+    }   
+}
