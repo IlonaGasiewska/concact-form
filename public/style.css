@@ -74,10 +74,48 @@ body{
     padding: 4%;
 }
 
+input[type="checkbox"] {
+    appearance: none;
+    background-color: lightgray;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input[type="checkbox"]:hover {
+    background-color: darkgray;
+  }
+  
+  input[type="checkbox"]:hover:after {
+    color: darkgray;
+  }
+  
+  input[type="checkbox"]:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: lightgray;
+    font-size: 15px;
+    display: inline-flex;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: black;
+  }
+  
+  input[type="checkbox"]:checked:after {
+    color: white;
+  }
 
-.form-checkbox, .form-checkbox-label{
+.form-checkbox-label{
     margin:2% 1%;
     font-size: 0.95rem;
+    color: black;
 }
 
 .form-checkbox-label-link{
