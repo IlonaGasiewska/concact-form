@@ -108,6 +108,25 @@ body{
     color:white;
 }
 
+.alert {
+    width: 30%;
+    min-width: 200px;
+    padding: 25px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family:  itc-avant-garde-gothic-pro, Arial, sans-serif;
+    display: none;
+    box-shadow: 2px 2px 2px lightgray;
+    border: 1px solid lightgray;
+  }
+
 @media screen and (max-width: 1025px) 
 {   
     body{
@@ -146,6 +165,10 @@ body{
         min-width: 280px;
         width: 70%;
         padding: 10%;
+    }
+
+    .alert{
+        width: 55%;
     }
 }
 

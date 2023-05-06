@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FormHeading from "./FormHeading.jsx";
 import Validation from "../validation.js";
+import Alert from "./Alert.jsx";
 
 function Form (){
 
@@ -41,6 +42,9 @@ function Form (){
                 message: "",
                 agree: ""
             })
+            const alert = document.querySelector(".alert");
+            alert.style.display = "block";
+            setTimeout((()=>{alert.style.display = "none"}), 3000);
         }
     }, [errors])
     

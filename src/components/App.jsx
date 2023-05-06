@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "./Heading.jsx";
 import Form from "./Form.jsx";
+import Alert from "./Alert.jsx";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="app">
       <Heading/ >
       <Form />
+      <Alert />
     </div>
   );
 }
