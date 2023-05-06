@@ -26,16 +26,23 @@ function Form (){
         event.preventDefault()
         setErrors(Validation(values));
         const form = document.querySelector(".form");
-        form.reset();
-        setValues({
-            name: "",
-            surname: "",
-            email: "",
-            phone: "",
-            message: "",
-            agree: ""
-        })
     }
+
+    
+    useEffect(()=>{
+        if (Object.keys(errors).length === 0 && (values.email !== "" && values.phone !== "" && values.agree !=="")){
+            const form = document.querySelector(".form");
+            form.reset();
+            setValues({
+                name: "",
+                surname: "",
+                email: "",
+                phone: "",
+                message: "",
+                agree: ""
+            })
+        }
+    }, [errors])
     
 
     return (
@@ -52,7 +59,7 @@ function Form (){
             <textarea onChange={handleInput} className="form-content-items message" type="text" name="message" id="message" placeholder="Wiadomość"/>
             {errors.message && <p className="error">{errors.message}</p>} 
             <p className="require-information">* Pole wymagane</p>
-            <input onChange={handleInput} className="form-checkbox agree" type="checkbox" name="agree" id="agree"/>
+            <input onClick={handleInput} className="form-checkbox agree" type="checkbox" name="agree" id="agree"/>
             <label className="form-checkbox-label" htmlFor="checkbox">Zapoznałam/em się z <a className="form-checkbox-label form-checkbox-label-link" href="/#">polityką prywatności</a>. *</label> 
             <input className="form-button" type="submit" value="Wyślij" />
         </form>
