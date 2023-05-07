@@ -32,7 +32,7 @@ export default function Validation(values) {
         errors.message = "Wiadomość jest za długa"
     }
 
-    if(values.agree !== ""){
+    if(values.agree !== "on"){
         errors.agree = "Pole jest wymagane";
         document.querySelector(".form-checkbox-label").style.color = "red";
         document.querySelector(".form-checkbox-label-link").style.color = "red";
